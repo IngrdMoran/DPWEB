@@ -100,26 +100,21 @@ padding: 15px;
 width: 300px;
 }
 
-#cabecera2{
-	min-height: 400px;
-	background:  url('../img/historia.jpg') no-repeat 0 -400px;
-	text-align: center;
-	color: #ffffff;
-}
-
 /*    Stilos Slider */
 .slider {
 	width: 95%;
 	margin: auto;
 	overflow: hidden;
+	
+
 }
 
 .slider ul {
 	display: flex;
 	padding: 0;
 	width: 400%;
+ 	animation: cambio 20s infinite alternate;
 	
-	animation: cambio 20s infinite alternate linear;
 }
 
 .slider li {
@@ -143,5 +138,7 @@ width: 300px;
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+
+
 }
 /* Fin estilos slider */
