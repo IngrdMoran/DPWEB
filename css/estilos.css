@@ -6,18 +6,25 @@ body{
 }
 
 .contenedor{
-	width: 80%;
-	margin: auto;
-	overflow: hidden;
+    width: 80%;
+    margin: auto;
+    background: #47545f4a;
+    padding: 3%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    text-align: center;
+	color: #ffffff;
 }
+
 .contenedor1{
 	min-height: 400px;
-	
 	text-align: center;
 	color: #ffffff;
 }
-.peque{
-	width: 80%;
+.contenedor2{
+	text-align: center;
+	color: #ffffff;
 }
 ul{
 	margin:0;
@@ -27,8 +34,10 @@ ul{
 header{
 	background-color: #000066;
 	color: #fff;
-	padding-top: 30px;
+	padding-top: 30px; 
+	padding-left: 1%;
 	min-height: 70px;
+	/*padding: 2%;*/
 	border-bottom: 5px solid  #cc47d6;
 }
 
@@ -69,10 +78,38 @@ header a:hover{
 }
 
 #cabecera{
+    text-align: center;
+    color: #e2d7fd;
+    width: 80%;
+    margin: auto;
+    background-size: cover;
+    height: 350px;
+    background-color: #8f82916e;
+    margin-top: -520px;
+    display: block;
+    position: relative;
+    /*
 	min-height: 400px;
-	background:  url('../img/ps4.jpg') no-repeat 0 -400px;
+	background:  url('../img/1.jpg') no-repeat 0 -400px;
 	text-align: center;
 	color: #ffffff;
+	*/
+}
+#tabla img{
+	width: 80%;
+}
+#tabla{
+	display: block;
+    width: 80%;
+    margin: auto;
+    color: #bee2f6;
+}
+td{
+	text-align: center;
+}
+.cajas{
+	margin-top: 10%;
+    width: 100%;
 }
 
 #cabecera h1{
@@ -84,21 +121,6 @@ header a:hover{
 #cabecera p{
 	font-size: 20px;
 }
-#cajas{
-	margin-top: 20px;
-}
-
-
-#cajas .caja{
-float: left;
-text-align: center;
-width: 30%;
-padding: 15px;
-}
-
-#cajas .caja img{
-width: 300px;
-}
 
 #cabecera2{
 	min-height: 400px;
@@ -109,8 +131,9 @@ width: 300px;
 
 /*    Stilos Slider */
 .slider {
-	width: 95%;
-	margin: auto;
+	width: 100%;
+    height: 500px;
+    margin: auto;
 	overflow: hidden;
 }
 
@@ -129,6 +152,9 @@ width: 300px;
 
 .slider img {
 	width: 100%;
+    height: 500px;
+    object-fit: fill;
+    object-position: center;
 }
 
 @keyframes cambio {
@@ -145,3 +171,12 @@ width: 300px;
 	100% {margin-left: -300%;}
 }
 /* Fin estilos slider */
+
+footer{
+	padding: 3%;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: white;
+    background: #000066;
+    margin-top: 2%;
+}
