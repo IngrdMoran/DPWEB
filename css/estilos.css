@@ -252,3 +252,45 @@ footer{
 .lienzo h1{
 	text-align: center;
 }
+
+/*Efectos para la caja de juegos*/
+ <script type="text/javascript">window.ICMS.cmd.push(function() { 
+//object-fit replacement for MSIE 11
+if (window.navigator.userAgent.indexOf("Trident") != -1) {
+    ICMS.each(".vspotlight .card img.thumb", function() {
+      var t = this, s = "url(" + ICMS.attr(t, "src") + ")", p = t.parentElement;
+      t.style.visibility = "hidden";
+      p.style.backgroundSize = "cover";
+      p.style.backgroundRepeat = "no-repeat";
+      p.style.backgroundPosition = "center";
+      p.style.backgroundImage = s;
+    });
+}
+ });</script>
+
+body.hasSkin section.vspotlight,body.hasSkin section.popular, body.hasSkin section.broll, body.hasSkin section.stripe, body.hasSkin .hspotlight, body.hasSkin .list-content { max-width: 1200px; padding: 8px 10px; }
+
+section.vspotlight, section.popular, section.broll { max-width: 1200px; display: block; padding: 32px 0px; margin: 0px auto; background-color: #4080f2; width: 100%; box-sizing: border-box; }
+section.vspotlight { display: table; }
+section.vspotlight article, section.hspotlight article { display: table-cell; width: 25%; vertical-align: top;  position: relative; overflow: hidden; }
+article a.thumb { box-sizing: border-box;  margin: 0 12px; position: relative; overflow: hidden; display: block; }
+section.vspotlight article.p1 a.thumb, section.hspotlight article.p1 a.thumb { margin-left: 0px; }
+section.vspotlight article.p4 a.thumb, section.hspotlight article.p4 a.thumb { margin-right: 0px; }
+
+section.vspotlight article img, section.hspotlight article img { width: 100%; min-width: 100%; background: #333; transition: transform .5s ease-out; border-radius: 4px; display: block;
+  object-fit: cover; object-position: center;
+}
+
+section.vspotlight article img { height: 475px; }
+section.hspotlight article img { height: 160px; }
+
+section.vspotlight img.thumb { }
+section.vspotlight img.thumb:hover { -moz-transform:scale(1.04);-webkit-transform:scale(1.04);transform:scale(1.04);transition:transform .75s ease-in-out }
+section.vspotlight .caption { position: absolute; bottom: 0px; width: 100%; margin: 0px; padding: 12px 24px; min-height: 66px; box-sizing: border-box; background-color: rgba(34,63,90, 0.75); color: #FFF; font-size: 18px; line-height: 1.21em; font-weight: 900; }
+section.vspotlight .caption a { color: #FFF; }
+
+@media (max-width: 860px) {
+  section.vspotlight article img { height: 360px; }
+  div.tbl {
+    margin-right: 0;
+  }
